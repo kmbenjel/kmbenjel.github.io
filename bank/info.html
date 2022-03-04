@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>معلومات التحويل</h1>
+	<h1 lang="ar">معلومات التحويل</h1>
 	<main class="container">
 		<section class="info general">
 			<input class="input" type="text" value="KHALID BENJELLOUN" id="name" readonly>
@@ -53,22 +53,23 @@
 			</button>
 		</section>
 		<section class="info">
-			<label for="international">International Bank Transfer</label><br>
-			<textarea class="input" type="textarea" value="" id="international" readonly>
-				I.B.A.N.\n:
-			MA64 230270823549621101920022
-			B.I.C / SWIFT
-			CIHMMAMC	
-			</textarea>
-			<button class="btn" data-clipboard-target="#international">
-				<img class="icon" src="copy.svg" alt="Copy to clipboard">
-			</button>
+			<div id="international">
+				<label for="international">International Bank-Transfer:</label><br>
+				<label for="iban">I.B.A.N:</label> <input type="text" id="iban" value="MA64 230270823549621101920022">
+				<button class="btn" data-clipboard-target="#iban">
+					<img class="icon" src="copy.svg" alt="Copy to clipboard">
+				</button><br>
+				<label for="bic">B.I.C/SWIFT:</label> <input type="text" id="bic" value="CIHMMAMC">
+				<button class="btn" data-clipboard-target="#bic">
+					<img class="icon" src="copy.svg" alt="Copy to clipboard">
+				</button>
+			</div>
 		</section>
 	</main>
 	
 	
 	<footer>
-		
+		<p>Designed by: Khalid Benjelloun</p>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 	<script>
