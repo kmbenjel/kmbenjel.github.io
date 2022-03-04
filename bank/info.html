@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Khalid Benjelloun</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1>Bank info</h1>
-      <div class="container">
-          <div class="info">
-              <h3>Name</h3>
-              <input type="text" value="KHALID BENJELLOUN" id="name" readonly>
-              <button class="btn" data-clipboard-target="#name">
-                <img src="copy.svg" alt="Copy to clipboard">
-              </button>
-          </div>
-      </div>
-
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
-      <script>
-          var btns = document.querySelectorAll('button');
-          var clipboard = new ClipboardJS(btns);
-    
-          clipboard.on('success', function (e) {
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
-          });
-    
-          clipboard.on('error', function (e) {
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
-          });
-        </script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Khalid Benjelloun</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>معلومات التحويل</h1>
+	<main class="container">
+		<section class="info general">
+			<input class="input" type="text" value="KHALID BENJELLOUN" id="name" readonly>
+			<button class="btn" data-clipboard-target="#name">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button><br>
+			<input class="input" type="text" value="00212641134341" id="phone" readonly>
+			<button class="btn" data-clipboard-target="#phone">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button><br>
+			<input class="input" type="text" value="City: Fes, Morocco" id="city" readonly>
+			<button class="btn" data-clipboard-target="#city">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button>
+		</section>
+		<section class="info">
+			<label for="rib">RIB (CIH):</label><br>
+			<input class="input" type="text" value="230270823549621101920022" id="rib" readonly>
+			<button class="btn" data-clipboard-target="#rib">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button>
+		</section>
+		<section class="info">
+			<label for="cih">CIH:</label><br>
+			<input class="input" type="text" value="8235496211019200" id="cih" readonly>
+			<button class="btn" data-clipboard-target="#cih">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button>
+		</section>
+		<section class="info">
+			<label for="chaabi">Banque Populaire:</label><br>
+			<input class="input" type="text" value="2111100885000000" id="chaabi" readonly>
+			<button class="btn" data-clipboard-target="#chaabi">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button>
+		</section>
+		<section class="info">
+			<label for="barid">Al-Barid Bank</label><br>
+			<input class="input" type="text" value="8282896" id="barid" readonly>
+			<button class="btn" data-clipboard-target="#barid">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button>
+		</section>
+		<section class="info">
+			<label for="international">International Bank Transfer</label><br>
+			<input class="input" type="textarea" value="" id="" readonly>
+			<button class="btn" data-clipboard-target="#">
+				<img class="icon" src="copy.svg" alt="Copy to clipboard">
+			</button>
+		</section>
+	</main>
+	
+	
+	<footer>
+		
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+	<script>
+		var btns = document.querySelectorAll('button');
+		var clipboard = new ClipboardJS(btns);
+		
+		clipboard.on('success', function (e) {
+			console.info('Action:', e.action);
+			console.info('Text:', e.text);
+			console.info('Trigger:', e.trigger);
+		});
+		
+		clipboard.on('error', function (e) {
+			console.info('Action:', e.action);
+			console.info('Text:', e.text);
+			console.info('Trigger:', e.trigger);
+		});
+	</script>
+</body>
 </html>
 
 <!-- 
-template
-
-<div class="container">
-  <div class="info">
-      <h3>xxx</h3>
-      <input type="text" value="xxx" id="xxx" readonly>
-      <button class="btn" data-clipboard-target="#xxx">Copy text</button>
-  </div>
-</div>
- -->
+	template
+	<input class="input" type="text" value="" id="" readonly>
+	<button class="btn" data-clipboard-target="#">
+		<img class="icon" src="copy.svg" alt="Copy to clipboard">
+	</button>
+-->
