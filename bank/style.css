@@ -1,5 +1,12 @@
+div {
+  text-align: center;
+}
+
 .container {
   max-width: 500px;
+  position: relative;
+  left: 50px;
+  right: 50px;
 }
 
 /* label,
@@ -18,5 +25,5 @@ textarea {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
 } */
