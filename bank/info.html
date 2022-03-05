@@ -10,8 +10,8 @@
 <body>
 	<!-- <h1 lang="ar" dir="rtl">معلومات التحويل</h1> -->
 	<main class="container">
-		<section class="info general">
-			<label for=""></label><br>
+		<label for="principal">Principal info:</label><br>
+		<section class="info general" id="principal">
 			<input class="input" type="text" value="KHALID BENJELLOUN" id="name" readonly>
 			<button class="btn" data-clipboard-target="#name">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
@@ -75,17 +75,43 @@
 		var btns = document.querySelectorAll('button');
 		var clipboard = new ClipboardJS(btns);
 		
-		clipboard.on('success', function (e) {
-			console.info('Action:', e.action);
-			console.info('Text:', e.text);
-			console.info('Trigger:', e.trigger);
+		clipboard.on('success', function(e) {
+			setTooltip(e.trigger, 'Copied! 🙌');
+			hideTooltip(e.trigger);
 		});
 		
-		clipboard.on('error', function (e) {
-			console.info('Action:', e.action);
-			console.info('Text:', e.text);
-			console.info('Trigger:', e.trigger);
+		clipboard.on('error', function(e) {
+			setTooltip(e.trigger, 'Failed!');
+			hideTooltip(e.trigger);
 		});
+		
+		// Tooltip
+		
+		$('button').tooltip({
+			trigger: 'click',
+			placement: 'bottom'
+		});
+		
+		function setTooltip(btn, message) {
+			$(btn).tooltip('hide')
+			.attr('data-original-title', message)
+			.tooltip('show');
+		}
+		
+		function hideTooltip(btn) {
+			setTimeout(function() {
+				$(btn).tooltip('hide');
+			}, 1000);
+		}
+		
 	</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+	
+	<button class="btn btn-primary" data-clipboard-text="It worked!">Click me</button>
+	<button class="btn btn-primary" data-clipboard-text="It worked again!">Click me</button>
+	
 </body>
 </html>

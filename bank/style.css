@@ -1,23 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* body {
 
-h1 {
-  background: whitesmoke;
-}
-
-body {
-  text-align: center;
-  line-height: 3;
-  background: ghostwhite;
 }
 
 main {
-  display:flex;
-  flex-direction: column;
-  margin: auto;
+
 }
 
 input {
@@ -34,3 +20,4 @@ button {
   width: 3vw;
   height: 5vh;
 }
+ */
