@@ -13,43 +13,43 @@
 	<main class="container">
 		<label for="principal">Principal info:</label><br>
 		<section class="info general" id="principal">
-			<input class="input" type="text" value="KHALID BENJELLOUN" id="name" readonly>
+			<input class="form-control form-control-lg" type="text" value="KHALID BENJELLOUN" id="name" readonly>
 			<button class="btn" type="button"data-clipboard-target="#name">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button><br>
-			<input class="input" type="text" value="00212641134341" id="phone" readonly>
+			<input class="form-control form-control-lg" type="text" value="00212641134341" id="phone" readonly>
 			<button class="btn" type="button"data-clipboard-target="#phone">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button><br>
-			<input class="input" type="text" value="City: Fes, Morocco" id="city" readonly>
+			<input class="form-control form-control-lg" type="text" value="City: Fes, Morocco" id="city" readonly>
 			<button class="btn" type="button"data-clipboard-target="#city">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button>
 		</section>
 		<section class="info">
 			<label for="rib">RIB (CIH):</label><br>
-			<input class="input form-control form-control-lg" type="text" value="230270823549621101920022" id="rib" readonly>
+			<input class="form-control form-control-lg" type="text" value="230270823549621101920022" id="rib" readonly>
 			<button class="btn" type="button"data-clipboard-target="#rib">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button>
 		</section>
 		<section class="info">
 			<label for="cih">CIH:</label><br>
-			<input class="input" type="text" value="8235496211019200" id="cih" readonly>
+			<input class="form-control form-control-lg" type="text" value="8235496211019200" id="cih" readonly>
 			<button class="btn" type="button"data-clipboard-target="#cih">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button>
 		</section>
 		<section class="info">
 			<label for="chaabi">Banque Populaire:</label><br>
-			<input class="input" type="text" value="2111100885000000" id="chaabi" readonly>
+			<input class="form-control form-control-lg" type="text" value="2111100885000000" id="chaabi" readonly>
 			<button class="btn" type="button"data-clipboard-target="#chaabi">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button>
 		</section>
 		<section class="info">
 			<label for="barid">Al-Barid Bank:</label><br>
-			<input class="input" type="text" value="8282896" id="barid" readonly>
+			<input class="form-control form-control-lg" type="text" value="8282896" id="barid" readonly>
 			<button class="btn" type="button"data-clipboard-target="#barid">
 				<img class="icon" src="copy.svg" alt="Copy to clipboard">
 			</button>
@@ -83,7 +83,6 @@
 			setTooltip(e.trigger, 'Copied! 🙌');
 			hideTooltip(e.trigger);
 		});
-		
 		clipboard.on('error', function(e) {
 			setTooltip(e.trigger, 'Failed!');
 			hideTooltip(e.trigger);
@@ -95,19 +94,16 @@
 			trigger: 'click',
 			placement: 'bottom'
 		});
-		
 		function setTooltip(btn, message) {
 			$(btn).tooltip('hide')
 			.attr('data-original-title', message)
 			.tooltip('show');
 		}
-		
 		function hideTooltip(btn) {
 			setTimeout(function() {
 				$(btn).tooltip('hide');
 			}, 1000);
 		}
-		
 	</script>
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
