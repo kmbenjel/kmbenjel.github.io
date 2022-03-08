@@ -8,8 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="container justify-content-center">
-	<main class="container justify-content-center">
+<body class="container">
+	<main class="container">
 		<label for="principal">Principal info:</label><br>
 		<section class="info general" id="principal">
 			<input class="form-control" type="text" value="KHALID BENJELLOUN" id="name" readonly>
@@ -72,41 +72,57 @@
 	<footer>
 		<p>Designed by: Khalid Benjelloun</p>
 	</footer>
-
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/tooltipster.main.min.css"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 	<script>
-		var btns = document.querySelectorAll('button');
+		var btns = document.querySelectorAll('.btn');
 		var clipboard = new ClipboardJS(btns);
-		
-		clipboard.on('success', function(e) {
-			setTooltip(e.trigger, 'Copied! 🙌');
-			hideTooltip(e.trigger);
-		});
-		clipboard.on('error', function(e) {
-			setTooltip(e.trigger, 'Failed!');
-			hideTooltip(e.trigger);
-		});
-		
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
 		// Tooltip
-		
-		$('button').tooltip({
+		$(document).ready(function(){
+			$('[data-bs-toggle="tooltip"]').tooltip() 
+		});
+		$('.btn').tooltip({
 			trigger: 'click',
 			placement: 'bottom'
 		});
+		
 		function setTooltip(btn, message) {
 			$(btn).tooltip('hide')
 			.attr('data-original-title', message)
 			.tooltip('show');
 		}
+		
 		function hideTooltip(btn) {
 			setTimeout(function() {
 				$(btn).tooltip('hide');
 			}, 1000);
 		}
+		
+		
+		// Clipboard
+		
+		clipboard.on('success', function(e) {
+			setTooltip(e.trigger, 'Copied!');
+			hideTooltip(e.trigger);
+		});
+		
+		clipboard.on('error', function(e) {
+			setTooltip(e.trigger, 'Failed!');
+			hideTooltip(e.trigger);
+		});
+		
 	</script>
-	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
 </body>
 </html>
 
