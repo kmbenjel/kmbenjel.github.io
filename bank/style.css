@@ -1,10 +1,10 @@
-body {
+.container {
     max-width: fit-content;
     max-width: 500px;
 }
 
 main {
-    
+    margin: auto;
 }
 
 input {
