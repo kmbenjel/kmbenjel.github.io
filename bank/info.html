@@ -8,11 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body >
-	<div class="container border">
+<body>
+	
+	<div class="container border p-4 my-4" style="max-width: 500px;">
+		<div class="display-6"><p class="mark" style="text-align:center;">Transaction Info</p></div>
 		<label for="principal">Principal info:</label><br>
-		<section class="border row" id="principal">
-			<input class="form-control col-8" type="text" value="KHALID BENJELLOUN" id="name" readonly>
+		<div class="border" id="principal">
+			<input class="form-control" type="text" value="KHALID BENJELLOUN" id="name" readonly>
 			<button class="btn btn-outline-dark col" type="button" data-clipboard-target="#name">
 				Copy
 			</button>
@@ -24,36 +26,36 @@
 			<button class="btn btn-outline-dark" type="button" data-clipboard-target="#city">
 				Copy
 			</button>
-		</section>
-		<section class="info">
+		</div>
+		<div class="info">
 			<label for="rib">RIB (CIH):</label><br>
 			<input class="form-control" type="text" value="230270823549621101920022" id="rib" readonly>
 			<button class="btn btn-outline-dark" type="button" data-clipboard-target="#rib">
 				Copy
 			</button>
-		</section>
-		<section class="info">
+		</div>
+		<div class="info">
 			<label for="cih">CIH:</label><br>
 			<input class="form-control" type="text" value="8235496211019200" id="cih" readonly>
 			<button class="btn btn-outline-dark" type="button" data-clipboard-target="#cih">
 				Copy
 			</button>
-		</section>
-		<section class="info">
+		</div>
+		<div class="info">
 			<label for="chaabi">Banque Populaire:</label><br>
 			<input class="form-control" type="text" value="2111100885000000" id="chaabi" readonly>
 			<button class="btn btn-outline-dark" type="button" data-clipboard-target="#chaabi">
 				Copy
 			</button>
-		</section>
-		<section class="info">
+		</div>
+		<div class="info">
 			<label for="barid">Al-Barid Bank:</label><br>
 			<input class="form-control" type="text" value="8282896" id="barid" readonly>
 			<button class="btn btn-outline-dark" type="button" data-clipboard-target="#barid">
 				Copy
 			</button>
-		</section>
-		<section class="info">
+		</div>
+		<div class="info">
 			<div id="international">
 				<label for="international">International Bank Transfers:</label><br>
 				<label for="iban">I.B.A.N:</label><br>
@@ -67,7 +69,7 @@
 					Copy
 				</button>
 			</div>
-		</section>	
+		</div>	
 		<hr class="bottom-line">
 		
 		<footer>
