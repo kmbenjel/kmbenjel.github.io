@@ -10,21 +10,20 @@
 </head>
 <body>
 	<div class="container-fluid  border p-4 my-4" id="accordion" style="max-width: 400px;background-color:#FCFFE9">
-	<div class="">
-		<div class="display-5">
-			<p style="text-align:center;">Transaction Info</p>
+		<div class="">
+			<div class="display-5">
+				<p style="text-align:center;">Transaction Info</p>
+			</div>
+			<figure style="opacity: .75;">
+				<img src="khalid.jpg" class="img-fluid img-thumbnail rounded-circle mx-auto d-block m-5" alt="Photo of me: Khalid Benjelloun" style="max-width: 70%; width: 350px;">
+			</figure>
 		</div>
-		<figure style="opacity: .75;">
-			<img src="khalid.jpg" class="img-fluid img-thumbnail rounded-circle mx-auto d-block m-5" alt="Photo of me: Khalid Benjelloun" style="max-width: 70%; width: 350px;">
-		</figure>
-	</div>
 		
 		<div class="btn-group form-control">
 			<input style="width: 300px;" class="form-control m-1" type="text" value="KHALID BENJELLOUN" id="name" readonly>
-			<button class="btn btn-outline-dark m-1 rounded" type="button" data-clipboard-target="#name" data-bs-toggle="tooltip" title="Hooray!">
+			<button class="btn btn-outline-dark m-1 rounded" type="button" data-clipboard-target="#name">
 				Copy
 			</button>
-			
 		</div>
 		<label for="principal">Principal info:</label><br>
 		<div class="border" id="principal">
@@ -96,54 +95,11 @@
 	<script>
 		var btns = document.querySelectorAll('.btn');
 		var clipboard = new ClipboardJS(btns);
-		// Tooltip
 		
-		// $('.btn').tooltip({
-			// 	trigger: 'click',
-			// 	placement: 'top'
-			// });
-			
-			// function setTooltip(btn, message) {
-				// 	$(btn).tooltip('hide')
-				// 	.attr('data-original-title', message)
-				// 	.tooltip('show');
-				// }
-				
-				// function hideTooltip(btn) {
-					// 	setTimeout(function() {
-						// 		$(btn).tooltip('hide');
-						// 	}, 350);
-						// }
-						
-						// // Clipboard
-						
-						// clipboard.on('success', function(e) {
-							// 	setTooltip(e.trigger, 'Copied!');
-							// 	hideTooltip(e.trigger);
-							// });
-							
-							// clipboard.on('error', function(e) {
-								// 	setTooltip(e.trigger, 'Failed!');
-								// 	hideTooltip(e.trigger);
-								// });
-								
-							</script>
-							<script>
-								
-								var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-								var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-									return new bootstrap.Tooltip(tooltipTriggerEl), {
-										container: 'body',
-										trigger : click()
-									};
-								})
-							</script>
-							
-							<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-							<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-							
-						</script>
-					</body>
-					</html>
-					
-					
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		
+	</script>
+</body>
+</html>
+
