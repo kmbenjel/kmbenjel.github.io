@@ -7,6 +7,9 @@
 	<title>Transaction Info - Khaid Benjelloun</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
+	<!-- SideTip -->
+	<link rel="stylesheet" type="text/css" href="tooltipster-sideTip-noir.min.css">
+	
 	<!-- Tooltipster CSS -->
 	
 	<link rel="stylesheet" type="text/css" href="tooltipster.bundle.min.css">
@@ -14,21 +17,21 @@
 	<!-- Bootstrap -->
 	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script>
-		$(document).ready(function() {
-			$('.copied').tooltipster(
-				trigger: 'click'
-			);
-		});
-	</script>
+
 	<!-- Tooltipster -->
 	
 	<script type="text/javascript" src="tooltipster.bundle.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            $('.btn').tooltipster({
+				trigger: 'click'
+			});
+        });
+    </script>
 	
 	<!-- JQuery -->
-	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	
 </head>
 <body>
 	<div class="container p-3 mx-auto">
@@ -55,7 +58,7 @@
 				
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto">
 					<input class="form-control" type="text" value="KHALID BENJELLOUN" id="name" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#name">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#name">
 						Copy
 					</button>
 				</div>
@@ -64,7 +67,7 @@
 				
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto">
 					<input class="form-control" type="text" value="+212641134341" id="phone" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#phone">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#phone">
 						Copy
 					</button>
 				</div>
@@ -73,7 +76,7 @@
 				
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto">
 					<input class="form-control" type="text" value="City: Fes, Morocco" id="city" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#city">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#city">
 						Copy
 					</button>
 				</div>
@@ -89,7 +92,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">RIB (CIH):</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" value="230270823549621101920022" id="rib" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#rib">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#rib">
 						Copy
 					</button>
 				</div>
@@ -99,7 +102,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">CIH:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" value="8235496211019200" id="cih" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#cih">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#cih">
 						Copy
 					</button>
 				</div>
@@ -109,7 +112,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">Banque Populaire:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" value="2111100885000000" id="chaabi" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#chaabi">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#chaabi">
 						Copy
 					</button>
 				</div>
@@ -119,7 +122,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">Al-Barid Bank:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-2">
 					<input class="form-control" type="text" value="8282896" id="barid" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#barid">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#barid">
 						Copy
 					</button>
 				</div>
@@ -134,7 +137,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">I.B.A.N:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" id="iban" value="MA64 230270823549621101920022" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#iban">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#iban">
 						Copy
 					</button>
 				</div>
@@ -144,7 +147,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">B.I.C/SWIFT:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" id="bic" value="CIHMMAMC" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#bic">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#bic">
 						Copy
 					</button>
 				</div>
@@ -160,7 +163,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">From any Credit Card:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" id="remitly" value="https://www.remitly.com" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#remitly">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#remitly">
 						Copy
 					</button>
 				</div>
@@ -170,7 +173,7 @@
 				<p class="h5 ps-1 m-0 text-secondary">PayPal or Payoneer:</p>
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto mb-4">
 					<input class="form-control" type="text" id="email" value="khalidmailing@gmail.com" readonly>
-					<button class="btn btn-outline-dark rounded ms-2 copied" title="Copied!  🙌" type="button" data-clipboard-target="#email">
+					<button class="btn btn-outline-dark rounded ms-2" title="Copied!  🙌" type="button" data-clipboard-target="#email">
 						Copy
 					</button>
 				</div>
@@ -190,6 +193,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+
 <script>
 	var btns = document.querySelectorAll('.btn');
 	var clipboard = new ClipboardJS(btns);
