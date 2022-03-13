@@ -1,7 +1,11 @@
 input {
-    max-width: 260px;
+    max-width: 280px;
 }
 
 button {
     max-width: 64px;
+}
+
+.principal {
+    background-color:rgba(100, 100, 100, .15);
 }
