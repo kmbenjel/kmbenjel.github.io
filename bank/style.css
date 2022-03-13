@@ -26,3 +26,11 @@ button {
 p {
     text-align:center;
 }
+
+.section {
+    background-color: rgb(120, 0, 0, .1);
+}
+
+.h5 {
+    text-align:left;
+}
