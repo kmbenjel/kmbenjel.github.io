@@ -37,6 +37,7 @@ p {
 
 hr {
     width: 70%;
+    max-width: 300px;
 }
 
 
