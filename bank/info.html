@@ -60,7 +60,7 @@
 				
 				<div class="border border-secondary m-1 btn-group form-control p-2 mx-auto">
 					<input class="form-control" type="text" value="City: Fes, Morocco" id="city" readonly>
-					<button class="btn btn-outline-dark rounded ms-2"  type="button" data-clipboard-target="#city">
+					<button class="btn btn-outline-dark rounded ms-2" type="button" data-clipboard-target="#city">
 						Copy
 					</button>
 				</div>
@@ -182,29 +182,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 
-<!-- <script>
+<script>
 	var btns = document.querySelectorAll('.btn');
 	var clipboard = new ClipboardJS(btns);
-</script> -->
-
-<script>
-	const btns = document.querySelectorAll('.btn');
-	const clipboard = new ClipboardJS(btns);
-	const alert = document.querySelector("#alert");
-	
-	const showAlert = () => {
-		// Remove hidden class to show button
-		alert.classList.remove("hidden");
-		// Add hidden class back after 2 seconds
-		setTimeout(() => {
-			alert.classList.add("hidden")
-		}, 1000);
-	};
-	
-	btns.forEach(btn => {
-		btn.addEventListener("click", showAlert);
-	});
 </script>
+
 
 
 <!-- Bootstrap -->
