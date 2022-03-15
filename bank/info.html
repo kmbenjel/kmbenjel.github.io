@@ -7,9 +7,6 @@
 	<title>Transaction Info - Khaid Benjelloun</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
-	<!-- SideTip -->
-	<link rel="stylesheet" type="text/css" href="tooltipster-sideTip-noir.min.css">
-	
 	<!-- Tooltipster CSS -->
 	
 	<link rel="stylesheet" type="text/css" href="tooltipster.bundle.min.css">	
@@ -170,7 +167,7 @@
 		
 		<!-- Footer -->
 		
-		<hr class="mx-auto mt-5ي">
+		<hr class="mx-auto mt-5">
 		
 		<footer>
 			<p class="h6 fw-light">Designed by: Khalid Benjelloun</p>
@@ -202,7 +199,10 @@
 <script>
 	$(document).ready(function() {
 		$('.btn').tooltipster({
-			trigger: 'click'
+			trigger: 'click',
+			timer: 600,
+			position: 'left',
+			
 		});
 	});
 </script>
