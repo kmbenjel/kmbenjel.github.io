@@ -39,28 +39,3 @@ hr {
     width: 70%;
     max-width: 300px;
 }
-
-
-/* style.css */
-
-.alert-container {
-    position: fixed;
-    z-index: 10; 
-    bottom: 10rem;
-  }
-  
-  .alert-message {
-    height: 50px;
-    font-size: 1.2rem;
-    margin-left: 110px;
-    padding: 10px 15px;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(11, 87, 9, 0.6);
-    border-radius: 18px;
-    cursor: default;
-  }
-  
-  .hidden {
-    display: none;
-  }
