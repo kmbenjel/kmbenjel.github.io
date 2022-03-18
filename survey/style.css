@@ -1,0 +1,21 @@
+main {
+    max-width: 700px;
+}
+
+#img-caption {
+    font-size: 12px;
+}
+
+section > p {
+    text-indent: 2em;
+    text-align: justify;
+    font-size: 17px;
+}
+
+#title {
+    width: auto;
+}
+
+#description {
+    background-color: rgb(0, 0, 0, 0.24);
+}
