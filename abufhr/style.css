@@ -9,14 +9,18 @@ main {
 
 
 .all {
+    
+}
 
+#img-caption {
+    font-size: 12px;
 }
 
 section > p {
     text-indent: 2em;
-    line-height: 2em;
+    /* line-height: 1.3em; */
     text-align: justify;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 #title {
