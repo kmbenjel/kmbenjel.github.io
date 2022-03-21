@@ -1,5 +1,6 @@
-main {
+#main {
     max-width: 700px;
+    background-color: rgb(0, 0, 0, 0.1);
 }
 
 #img-caption {
