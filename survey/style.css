@@ -30,7 +30,7 @@ figure {
 }
 
 figcaption {
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .25);
     max-width:fit-content;
 }
 
