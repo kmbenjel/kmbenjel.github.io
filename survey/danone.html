@@ -24,29 +24,27 @@
             <form action="submit" id="survey-form" class="p-4 rounded-3 mx-auto">
                 
                 <div class="form-floating my-3">
-                    <input id="name" type="text" class="form-control col" placeholder="Danone Buying Man" required>
-                    <label id="name-label" for="name" class="form-label">Enter your name:</label>
-                    
+                    <input id="name" type="text" class="form-control" placeholder=" " required>
+                    <label id="name-label" for="name" class="form-label">Your name</label>
                 </div>
                 <div class="form-floating my-3">
-                    <input id="email" name="email" type="email" class="form-control" placeholder="buyme@danone.now" required>
-                    <label id="email-label" for="email" class="form-label">Enter your email:</label>
-
+                    <input id="email" name="email" type="email" class="form-control" placeholder=" " required>
+                    <label id="email-label" for="email" class="form-label">Your email</label>
                 </div>
-                <div>
-                    <label id="number-label" for="name" class="form-label">How many Danones do you eat every day?:</label>
-                    <input id="number" name="number" type="number" min="10" max="30" placeholder="Enter a number between 10 and 30" class="form-control" required>
-                    
-                </div>
+                <div class="form-floating my-3">
+                    <input id="number" name="number" type="number" min="10" max="30" class="form-control" placeholder=" " required>
+                    <label id="number-label" class="form-label" for="name" class="">How many Danones do you eat every day? (between 10 and 30)</label>
+                </div>  
                 
-                <div class="form-floating">
+                <div class="form-floating my-3">
                     <select id="dropdown" class="form-select" id="sel1" name="sellist">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                        <option selected>Choose a number</option>
+                        <option>A thousand Danones</option>
+                        <option>A ten thousand Danones</option>
+                        <option>A hundred thousand Danones</option>
+                        <option>A million Danones</option>
                     </select>
-                    <label for="sel1" class="form-label">Select list (select one):</label>
+                    <label for="sel1" class="form-label p-2 fw-bolder">How many thousand Danones could you buy me on a daily basis?</label>
                 </div>
                 
                 
