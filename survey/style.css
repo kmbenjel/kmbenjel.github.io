@@ -1,5 +1,5 @@
 #body {
-    background-color: rgb(30, 60, 90, 0.3);
+    background-color: whitesmoke;
     background-size: 1400px;
 }
 
@@ -8,7 +8,7 @@ main {
 }
 
 input.form-control, select.form-select, textarea#more, .radios, .checks, div.form-control {
-    background-color: rgb(214, 223, 233);
+    background-color: whitesmoke;
 }
 
 
@@ -38,7 +38,7 @@ figure {
 }
 
 footer {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(0, 0, 0, 0.06);
     max-width:fit-content;
 }
 
@@ -50,12 +50,12 @@ textarea#more {
     height: 110px;
 }
 
-.btn {
-    max-width: 80px;
+.btn-lg {
+    max-width: 100px;
 }
 
 textarea#more, select.form-select, #number{
-    background-color:  rgb(234, 243, 243);
+    background-color:  whitesmoke;
 }
 
 div.fs-6 {

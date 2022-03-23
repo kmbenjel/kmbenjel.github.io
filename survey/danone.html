@@ -18,7 +18,7 @@
             
             <figure id="img-div" class="mx-auto my-4 rounded-3 px-3 py-5">
                 <img id="image" class="img-fluid img-thumbnail mx-auto rounded-circle" src="images/yogurts.jpg" alt="A disappointingly small number of danones.">
-                <figcaption id="img-caption" class="mx-auto mt-3 text-light">A disappointingly small number of danones.</figcaption>
+                <figcaption id="img-caption" class="mx-auto mt-3 text-dark">A disappointingly small number of danones.</figcaption>
             </figure>
             
             <form action="thanks.html" id="survey-form" class="p-3 rounded-3 mx-auto">
@@ -32,13 +32,13 @@
                     <label id="email-label" for="email" class="form-label">Your email</label>
                 </div>
                 <div class="my-3 fw-bolder text-secondary form-control">
-                    <label id="number-label" class="form-label" for="name" class="">How many Danones do you eat every day?</label>
+                    <label id="number-label" for="number" class="form-label" for="name" class="">How many Danones do you eat every day?</label>
                     <input id="number" name="number" type="number" min="10" max="30" class="form-control m-2 mx-auto" placeholder="In the range: 10-100" required>
                 </div>
                 
                 <div class="mt-3 mb-1 form-control">
                     <label for="sel1" class="form-label fw-bolder text-secondary">How many thousand Danones could you buy me on a daily basis?</label>
-                    <select id="dropdown" class="form-select m-2 mx-auto" id="sel1" name="sellist">
+                    <select id="dropdown" class="form-select m-2 mx-auto " id="sel1" name="sellist">
                         <option selected>Choose a number</option>
                         <option>A thousand Danones</option>
                         <option>A ten thousand Danones</option>
@@ -51,16 +51,16 @@
                     <div class="radios border p-3 col-md rounded-3 me-md-2 m-1 mx-auto">
                         <div class="fs-6 fw-bolder text-secondary">What are your gifts to me along width every Danone-stock?</div>    
                         <div class="form-check my-3 text-start">
-                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="pink pillow">
-                            <label class="form-check-label" for="option1">A Pink Pillow</label>                           
+                            <input class="form-check-input" type="checkbox" id="check1" name="check1" value="pink pillow">
+                            <label class="form-check-label" for="check1">A Pink Pillow</label>                           
                         </div>
                         <div class="form-check my-3 text-start">
-                            <input class="form-check-input" type="checkbox" id="check1" name="option2" value="blue bycicle">
-                            <label class="form-check-label" for="option2">A Blue Bycicle</label>
+                            <input class="form-check-input" type="checkbox" id="check2" name="check2" value="blue bycicle">
+                            <label class="form-check-label" for="check2">A Blue Bycicle</label>
                         </div>
                         <div class="form-check my-3 text-start">
-                            <input class="form-check-input" type="checkbox" id="check1" name="option3" value="red Range-Rover">
-                            <label class="form-check-label" for="option3">A Red Range-Rover</label>
+                            <input class="form-check-input" type="checkbox" id="check3" name="check3" value="red Range-Rover">
+                            <label class="form-check-label" for="check3">A Red Range-Rover</label>
                         </div>
                     </div>
                     
@@ -68,16 +68,16 @@
                     <div class="checks border p-3 col-md rounded-3 ms-md-2 m-1 mx-auto">
                         <div class="fs-6 fw-bolder text-secondary">How much money you will send to me along with every Danone-stock?</div>
                         <div class="form-check my-3 text-start">
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="1000" checked>1000$
-                            <label class="form-check-label" for="radio1"></label>
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="1000" checked>
+                            <label class="form-check-label" for="radio1">1000$</label>
                         </div>
                         <div class="form-check my-3 text-start">
-                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="2000">2000$
-                            <label class="form-check-label" for="radio2"></label>
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="2000">
+                            <label class="form-check-label" for="radio2">2000$</label>
                         </div>
                         <div class="form-check my-3 text-start">
-                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="3000">3000$
-                            <label class="form-check-label" for="radio3"></label>
+                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="3000">
+                            <label class="form-check-label" for="radio3">3000$</label>
                         </div>
                     </div>        
                 </div>
@@ -86,8 +86,8 @@
                     <label for="more" class="form-label fw-bolder text-secondary">Describe how much do you adore buying me Danones...</label>
                     <textarea id="more" name="more" class="form-control" placeholder=" "></textarea>
                 </div>
-                
-                <button id="submit" class="form-control btn btn-dark p-2 my-4">Submit</button>
+                <br>
+                <button id="submit" class="form-control btn-lg btn-secondary my-4 border-dark mx-auto">Submit</button>
             </form>
 
             <div>
