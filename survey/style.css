@@ -43,3 +43,7 @@ footer {
 form {
     background-color: rgb(0, 0, 0, 0.1);
 }
+
+textarea#more {
+    height: 110px;
+}
