@@ -57,3 +57,7 @@ textarea#more {
 textarea#more, select.form-select, #number{
     background-color:  rgb(234, 243, 243);
 }
+
+div.fs-6 {
+    height: 90px;
+}
