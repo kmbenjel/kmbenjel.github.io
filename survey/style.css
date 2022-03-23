@@ -7,9 +7,11 @@ main {
     max-width: 700px;
 }
 
-input.form-control, select.form-select, textarea#more, .radios, .checks {
+input.form-control, select.form-select, textarea#more, .radios, .checks, div.form-control {
     background-color: rgb(214, 223, 233);
 }
+
+
 
 #image {
     background-color: rgba(255, 255, 255, .4);
@@ -50,4 +52,8 @@ textarea#more {
 
 .btn {
     max-width: 80px;
+}
+
+textarea#more, select.form-select, #number{
+    background-color:  rgb(234, 243, 243);
 }
