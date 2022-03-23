@@ -7,7 +7,7 @@ main {
     max-width: 700px;
 }
 
-input.form-control, select.form-select, textarea#more {
+input.form-control, select.form-select, textarea#more, .radios, .checks {
     background-color: rgb(214, 223, 233);
 }
 
