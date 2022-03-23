@@ -38,3 +38,7 @@ footer {
     background-color: rgba(255, 255, 255, .9);
     max-width:fit-content;
 }
+
+form {
+    background-color: rgb(0, 0, 0, 0.1);
+}
