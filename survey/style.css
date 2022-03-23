@@ -1,14 +1,15 @@
 #body {
-    background-color: whitesmoke;
+    background-color: #aad3e7;
     background-size: 1400px;
 }
 
 main {
     max-width: 700px;
+    background-color: rgb(0, 0, 0, 0.15);
 }
 
 input.form-control, select.form-select, textarea#more, .radios, .checks, div.form-control {
-    background-color: whitesmoke;
+    background-color: #c2d3dd;
 }
 
 
@@ -26,6 +27,11 @@ section > p {
 
 figure {
     background-color: rgb(0, 0, 0, 0.1);
+}
+
+figcaption {
+    background-color: rgba(255, 255, 255, .1);
+    max-width:fit-content;
 }
 
 #title {
@@ -61,3 +67,4 @@ textarea#more, select.form-select, #number{
 div.fs-6 {
     height: 70px;
 }
+
