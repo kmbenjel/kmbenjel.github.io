@@ -71,8 +71,9 @@ textarea#more {
     height: 110px;
 }
 
-.btn-lg {
-    max-width: 100px;
+.btn {
+    max-width: 80px;
+    background-color: rgba(70, 0, 0, 0.3);
 }
 
 textarea#more, select.form-select, #number{
