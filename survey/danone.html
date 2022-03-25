@@ -18,7 +18,7 @@
             
             <figure id="img-div" class="mx-auto my-4 rounded-3 px-3 py-5">
                 <img id="image" class="img-fluid img-thumbnail mx-auto rounded-circle" src="images/yogurts.jpg" alt="A disappointingly small number of danones.">
-                <figcaption id="img-caption" class="mx-auto mt-3 text-dark px-2 rounded-3"><mark>A disappointingly small number of Danones.</mark></figcaption>
+                <figcaption id="img-caption" class="mx-auto mt-3"><mark class="px-2 rounded-pill">A disappointingly small number of Danones.</mark></figcaption>
             </figure>
             
             <form action="thanks.html" id="survey-form" class="p-3 rounded-3 mx-auto">
@@ -37,9 +37,9 @@
                 </div>
                 
                 <div class="mt-3 mb-1 form-control p-3">
-                    <label for="sel1" class="form-label fw-bolder text-secondary">How many thousand Danones could you buy me on a daily basis?</label>
-                    <select id="dropdown" class="form-select m-2 mx-auto border-dark" id="sel1" name="sellist">
-                        <option selected>Choose a number</option>
+                    <label for="daily" class="form-label fw-bolder text-secondary">How many thousand Danones could you buy me on a daily basis?</label>
+                    <select id="dropdown" class="form-select m-2 mx-auto border-dark" id="daily" name="daily">
+                        <option selected aria-label="Default select">Choose a number</option>
                         <option>A thousand Danones</option>
                         <option>A ten thousand Danones</option>
                         <option>A hundred thousand Danones</option>
@@ -87,7 +87,7 @@
                     <textarea id="more" name="more" class="form-control border-dark" placeholder=" "></textarea>
                 </div>
                 <br>
-                <button id="submit" class="form-control btn-lg btn-secondary my-4 border-dark mx-auto fw-light">Submit</button>
+                <button id="submit" class="form-control btn-lg btn-outline-dark my-4 border-dark mx-auto">Submit</button>
             </form>
             
             <div>

@@ -10,13 +10,18 @@ main {
 
 @media screen and (max-width: 400px) {
     #description {
-        width: 270px;
+        width: 240px;
         font-size: 20px !important;
+        padding: 5% !important;
     }
 }
 
 input.form-control, select.form-select, textarea#more, .radios, .checks, div.form-control {
     background-color: #c2d3dd;
+}
+
+#email, #name {
+    background-color: whitesmoke;
 }
 
 
@@ -68,6 +73,8 @@ textarea#more {
 
 .btn-lg {
     max-width: 100px;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+
 }
 
 textarea#more, select.form-select, #number{
