@@ -1,4 +1,4 @@
-.container {
+.container, footer {
     max-width: 455px;
 }
 
@@ -24,19 +24,29 @@ button {
 
 
 p {
-    text-align:center;
+    text-align: center;
+}
+
+footer.small {
+    font-size: smaller;
 }
 
 .section {
-    background-color: rgb(120, 0, 0, .1);
+    background-color: rgba(237, 237, 237, 0.3);
 }
 
 .h5 {
     text-align:left;
+    color: rgb(212, 87, 9);
 }
 
 hr {
     width: 70%;
     max-width: 300px;
+}
+
+.h3 {
+    
+    color:#1e65b0;
 }
 
