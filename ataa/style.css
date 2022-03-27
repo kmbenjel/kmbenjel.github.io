@@ -7,9 +7,6 @@
     background-color: rgb(118,162,198, 0.5);
 }
 
-figure {
-    opacity: .6;
-}
 
 input {
     max-width: 280px;
@@ -22,13 +19,12 @@ button {
 
 #ataa {
     max-width: 70%;
-    margin: -70% 0 -70% 0;
-}
-
-.cropped {
-    width: auto;
     overflow: hidden;
 }
+
+/* .cropped {
+    margin: -30% 0% 0% -30%;
+} */
 
 p {
     text-align:center;
