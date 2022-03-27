@@ -1,0 +1,41 @@
+.container {
+    max-width: 455px;
+}
+
+#box {
+    max-width: 400px ;background-color:#FCFFE9;
+}
+
+figure {
+    opacity: .6;
+}
+
+input {
+    max-width: 280px;
+}
+
+button {
+    max-width: 64px;
+}
+
+
+#khalid {
+    max-width: 70%;
+}
+
+p {
+    text-align:center;
+}
+
+.section {
+    background-color: rgb(120, 0, 0, .1);
+}
+
+.h5 {
+    text-align:left;
+}
+
+hr {
+    width: 70%;
+    max-width: 300px;
+}
