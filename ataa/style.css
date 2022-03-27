@@ -7,6 +7,12 @@
     background-color: rgb(118,162,198, 0.5);
 }
 
+@media (max-width: 600px) {
+    #title {
+        font-size: 45px;
+    }
+}
+/*  */
 
 input {
     max-width: 280px;
@@ -18,8 +24,8 @@ button {
 
 
 #ataa {
-    max-width: 70%;
-    overflow: hidden;
+    max-width: 65%;
+    background-color: rgb(240, 191, 160);
 }
 
 
