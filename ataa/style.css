@@ -3,7 +3,8 @@
 }
 
 #box {
-    max-width: 400px ;background-color:#FCFFE9;
+    max-width: 400px ;
+    background-color: rgb(118,162,198, 0.5);
 }
 
 figure {
@@ -19,8 +20,14 @@ button {
 }
 
 
-#khalid {
+#ataa {
     max-width: 70%;
+    margin: -70% 0 -70% 0;
+}
+
+.cropped {
+    width: auto;
+    overflow: hidden;
 }
 
 p {
@@ -39,3 +46,4 @@ hr {
     width: 70%;
     max-width: 300px;
 }
+
