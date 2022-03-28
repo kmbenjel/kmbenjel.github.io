@@ -1,3 +1,7 @@
+body {
+    /* overflow: hidden; */
+}
+
 #main {
     max-width: 700px;
 }
