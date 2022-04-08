@@ -1,0 +1,11 @@
+body {
+    /* overflow: hidden; */
+}
+
+p {
+    text-align: justify;
+}
+
+#main {
+    max-width: 550px;
+}
