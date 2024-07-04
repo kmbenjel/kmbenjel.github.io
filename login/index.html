@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="parent">
+        <div class="row">
+            <!--First colomn-->
+            <div class="col-6" id="one">
+                <h1>Welcome Back</h1> <!-- with logo in right -->
+                <button class="btn btn-primary">Login with 42</button>
+                <hr>
+                <div>
+                    <label for="un"></label>
+                    <p>User Name:</p>
+                    <input type="text" placeholder="User name" id="un">
+                </div>
+                <div>
+                    <label for="psw"></label>
+                    <p>Password:</p>
+                    <input type="password" name="" id="psw" placeholder="Password">
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-primary">Log in</button>
+                </div>
+                <p>Don't have an account? <a href="">Signup</a></p>
+            </div>
+            <!--Second colomn-->
+            <div class="col-6"  id="two">
+                <img src="pingpong.avif" alt="ping-pong image" id="image">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
