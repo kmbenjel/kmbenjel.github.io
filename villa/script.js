@@ -12,8 +12,12 @@ function setLanguage(lang) {
   buttons.forEach((button) => {
     button.classList.toggle("active", button.dataset.lang === lang);
   });
+
+  localStorage.setItem("villa-language", lang);
 }
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
+
+setLanguage(localStorage.getItem("villa-language") || "fr");
