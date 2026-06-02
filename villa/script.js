@@ -20,4 +20,5 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
-setLanguage(localStorage.getItem("villa-language") || "fr");
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+setLanguage(requestedLanguage || localStorage.getItem("villa-language") || "fr");

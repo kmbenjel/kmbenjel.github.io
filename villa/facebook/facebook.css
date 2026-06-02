@@ -348,3 +348,23 @@ main {
   font-weight: 900;
   text-decoration: none;
 }
+
+
+.desktop-url {
+  right: 76px;
+  bottom: 360px;
+}
+
+.inside-url {
+  right: 74px;
+  bottom: 54px;
+}
+
+.clean-url {
+  right: 54px;
+  bottom: 44px;
+}
+
+.clean-art .footer-line {
+  background: rgba(255, 255, 255, 0.94);
+}
