@@ -207,6 +207,34 @@ h2 {
   color: var(--white);
 }
 
+.icon-button {
+  gap: 9px;
+}
+
+.icon-button svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.icon-button.whatsapp {
+  border-color: #1f9d5a;
+  background: #1f9d5a;
+  color: var(--white);
+}
+
+.icon-button.facebook {
+  border-color: #1877f2;
+  background: #1877f2;
+  color: var(--white);
+}
+
+.icon-button.facebook:hover,
+.icon-button.whatsapp:hover {
+  filter: brightness(0.94);
+}
+
 .intro-band,
 .specs {
   display: grid;
@@ -266,7 +294,7 @@ h2 {
 }
 
 body[dir="rtl"] .phone-number {
-  display: inline-block;
+  display: inline-flex;
   text-align: left;
 }
 
