@@ -541,46 +541,54 @@ footer {
 
 .compact-contact {
   justify-items: center;
-  gap: 16px;
-  padding-top: 20px;
-}
-
-.qr-contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
+  padding-top: 18px;
+}
+
+.qr-contact-single {
   width: min(560px, 100%);
-}
-
-.qr-contact-item {
-  min-height: 88px;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  min-height: 86px;
+  display: flex;
   align-items: center;
-  justify-items: center;
-  gap: 12px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.35rem;
-  font-weight: 900;
-  letter-spacing: 0;
-  box-shadow: 0 14px 36px rgba(29, 36, 35, 0.14);
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 22px;
+  border-radius: 20px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 36px rgba(29, 36, 35, 0.12);
 }
 
-.qr-contact-item svg {
-  width: 34px;
-  height: 34px;
+.qr-contact-icon {
+  width: 54px;
+  height: 54px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  flex: 0 0 auto;
+}
+
+.qr-contact-icon svg {
+  width: 30px;
+  height: 30px;
   fill: currentColor;
 }
 
-.qr-contact-item.whatsapp {
+.qr-contact-icon.whatsapp {
   background: #1f9d5a;
 }
 
-.qr-contact-item.tel {
+.qr-contact-icon.tel {
   background: var(--tile-dark);
+}
+
+.qr-contact-single strong {
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.58rem;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .mail-line {
@@ -636,10 +644,6 @@ footer {
     padding-inline: 20px;
   }
 
-  .qr-contact-grid {
-    grid-template-columns: 1fr;
-  }
-
   .flyer h1 {
     font-size: 2rem;
   }
@@ -677,17 +681,50 @@ footer {
 }
 
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
   body.qr-page {
+    width: 210mm;
+    height: 297mm;
     display: block;
     padding: 0;
+    margin: 0;
     background: white;
+    overflow: hidden;
   }
 
   .flyer {
-    width: 100%;
-    min-height: 100vh;
+    width: 210mm;
+    height: 297mm;
+    min-height: 0;
+    grid-template-rows: 82mm 1fr auto;
     box-shadow: none;
-    border-width: 10px;
-    page-break-after: always;
+    border-width: 3mm;
+    page-break-after: avoid;
+  }
+
+  .flyer-main {
+    gap: 3mm;
+    padding: 8mm 14mm;
+  }
+
+  .flyer h1 {
+    font-size: 28pt;
+  }
+
+  .arabic {
+    font-size: 18pt;
+  }
+
+  .qr-code {
+    width: 74mm;
+  }
+
+  .flyer-contact {
+    padding: 5mm 14mm 8mm;
   }
 }
