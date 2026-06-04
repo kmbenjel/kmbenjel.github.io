@@ -1,0 +1,28 @@
+{
+  "name": "kmbenjel.github.io",
+  "version": "1.0.0",
+  "description": "Static GitHub Pages sites",
+  "private": true,
+  "scripts": {
+    "lint:abufhr": "html-validate abufhr/tribute.html",
+    "lint:villa": "html-validate villa/index.html villa/print-qr.html",
+    "lint": "npm run lint:abufhr && npm run lint:villa",
+    "test": "npm run lint",
+    "build": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmbenjel/kmbenjel.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kmbenjel/kmbenjel.github.io/issues"
+  },
+  "homepage": "https://github.com/kmbenjel/kmbenjel.github.io#readme",
+  "devDependencies": {
+    "html-validate": "^11.5.1"
+  }
+}
