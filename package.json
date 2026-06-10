@@ -4,7 +4,7 @@
   "description": "Static GitHub Pages sites",
   "private": true,
   "scripts": {
-    "lint:abufhr": "html-validate abufhr/tribute.html",
+    "lint:abufhr": "html-validate abufhr/index.html",
     "lint:villa": "html-validate villa/index.html villa/print-qr.html",
     "lint": "npm run lint:abufhr && npm run lint:villa",
     "test": "npm run lint",
