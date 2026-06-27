@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>جاري التحويل...</title>
+    <link rel="canonical" href="https://atraf.benjelloun.dev/">
+    <script>
+        var newTarget = "https://atraf.benjelloun.dev/" + window.location.pathname.replace(/^\/atraf/, '') + window.location.search + window.location.hash;
+        window.location.replace(newTarget);
+    </script>
+</head>
+<body>
+    <p>تم نقل الموقع إلى العنوان الجديد. إذا لم يتم تحويلك تلقائياً، <a id="redirect-link" href="https://atraf.benjelloun.dev/">اضغط هنا</a>.</p>
+    <script>
+        document.getElementById('redirect-link').href = newTarget;
+    </script>
+</body>
+</html>
