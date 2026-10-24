@@ -26,8 +26,8 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ar_MA">
   <meta property="og:site_name" content="benjelloun.dev">
-  <meta property="og:title" content="Khalid Benjelloun / خالد بنجلّون">
-  <meta property="og:description" content="Developer portfolio, certificates, social links, and selected Arabic and bilingual web work by Khalid Benjelloun.">
+  <meta property="og:title" content="Khalid Benjelloun — AI-Native Systems &amp; Software Developer">
+  <meta property="og:description" content="AI-native software developer building production platforms, autonomous agent bridges, and high-volume data pipelines.">
   <meta property="og:url" content="https://benjelloun.dev/">
   <meta property="og:image" content="https://benjelloun.dev/assets/benjelloun-social-card.png">
   <meta property="og:image:width" content="1200">
@@ -35,27 +35,25 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="Khalid Benjelloun developer portfolio preview">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Khalid Benjelloun / خالد بنجلّون">
-  <meta name="twitter:description" content="Developer portfolio, certificates, social links, and selected Arabic and bilingual web work by Khalid Benjelloun.">
+  <meta name="twitter:title" content="Khalid Benjelloun — AI-Native Systems &amp; Software Developer">
+  <meta name="twitter:description" content="AI-native software developer building production platforms, autonomous agent bridges, and high-volume data pipelines.">
   <meta name="twitter:image" content="https://benjelloun.dev/assets/benjelloun-social-card.png">
   <meta name="twitter:image:alt" content="Khalid Benjelloun developer portfolio preview">
-  <title>Khalid Benjelloun / خالد بنجلّون</title>
+  <title>Khalid Benjelloun — AI-Native Systems &amp; Software Developer</title>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Khalid Benjelloun",
-    "alternateName": ["kmbenjel", "خالد بنجلّون"],
+    "alternateName": ["kmbenjel"],
     "url": "https://benjelloun.dev/",
     "image": "https://benjelloun.dev/assets/benjelloun-social-card.png",
     "sameAs": [
       "https://github.com/kmbenjel",
-      "https://www.facebook.com/kmbenjel",
       "https://www.linkedin.com/in/kmbenjel",
-      "https://x.com/kmbenjel",
-      "https://www.instagram.com/kmbenjel"
+      "https://x.com/kmbenjel"
     ],
-    "knowsAbout": ["Web development", "Arabic typography", "Digital publishing", "Frontend engineering"]
+    "knowsAbout": ["Fullstack Engineering", "AI-Native Systems", "Autonomous Agent Workflows", "Computer Vision Pipelines", "C & Unix Systems", "Arabic Typography & Digital Preservation"]
   }
   </script>
   <style>
@@ -234,11 +232,13 @@
     h1 {
       position: relative;
       z-index: 1;
-      max-width: 790px;
-      margin: 24px 0 0;
-      font-size: clamp(3.2rem, 8vw, 7.6rem);
-      line-height: 0.92;
-      letter-spacing: -0.06em;
+      max-width: 100%;
+      margin: 20px 0 0;
+      font-size: clamp(2.6rem, 5.2vw, 5.2rem);
+      line-height: 1.0;
+      letter-spacing: -0.035em;
+      word-break: normal;
+      overflow-wrap: normal;
     }
 
     .name-ar {
@@ -319,8 +319,7 @@
       background: var(--card-solid);
     }
 
-    .arabic-panel {
-      direction: rtl;
+    .highlights-panel {
       min-height: 520px;
       padding: clamp(28px, 5vw, 50px);
       display: flex;
@@ -334,18 +333,18 @@
       overflow: hidden;
     }
 
-    .arabic-panel h2 {
+    .highlights-panel h2 {
       margin: 0;
-      font-size: clamp(2rem, 5.5vw, 4.7rem);
-      line-height: 1.18;
+      font-size: clamp(1.85rem, 3.2vw, 3rem);
+      line-height: 1.15;
       letter-spacing: -0.035em;
     }
 
-    .arabic-panel p {
+    .highlights-panel p {
       margin: 0;
-      color: rgba(255, 247, 233, 0.78);
-      font-size: clamp(1.06rem, 2vw, 1.3rem);
-      line-height: 1.92;
+      color: rgba(255, 247, 233, 0.82);
+      font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+      line-height: 1.72;
     }
 
     .availability {
@@ -425,11 +424,30 @@
       gap: 16px;
     }
 
+    .certificate-intro {
+      margin: 22px 0 10px;
+    }
+
+    .certificate-intro h3 {
+      margin: 0 0 8px;
+      font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+
+    .certificate-intro p {
+      max-width: 690px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
     .certificate-panel {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
       gap: 24px;
+      margin-top: 32px;
       padding: 24px;
       border: 1px solid var(--line);
       border-radius: 28px;
@@ -574,6 +592,16 @@
       letter-spacing: -0.015em;
     }
 
+    .project-card h3 a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 140ms ease;
+    }
+
+    .project-card h3 a:hover {
+      color: var(--accent);
+    }
+
     .project-card p {
       margin: 0;
       color: var(--muted);
@@ -588,6 +616,52 @@
       line-height: 1.78;
     }
 
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      margin-top: auto;
+    }
+
+    .project-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
+    }
+
+    .project-btn.primary {
+      color: #fff8ed;
+      background: var(--ink);
+    }
+
+    .project-btn.primary:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .project-btn.secondary {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.65);
+    }
+
+    .project-btn.secondary:hover {
+      background: var(--card-solid);
+      border-color: var(--accent);
+      color: var(--accent-ink);
+      transform: translateY(-2px);
+    }
+
     .open-link {
       display: inline-flex;
       align-items: center;
@@ -597,6 +671,7 @@
       border-top: 1px solid var(--line);
       color: var(--accent-ink);
       font-weight: 700;
+      text-decoration: none;
     }
 
     .open-link::after { content: "↗"; font-size: 1.05rem; }
@@ -612,7 +687,7 @@
 
     @media (max-width: 980px) {
       .hero, .projects, .certificate-panel, .certificate-list { grid-template-columns: 1fr; }
-      .hero-main, .arabic-panel { min-height: auto; }
+      .hero-main, .highlights-panel { min-height: auto; }
       .section-head { align-items: start; flex-direction: column; }
       .section-head p { text-align: left; }
       .social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -622,9 +697,9 @@
       .page { width: min(100% - 22px, 1160px); padding-top: 14px; }
       .topbar { align-items: flex-start; flex-direction: column; }
       .quick-links { justify-content: flex-start; }
-      h1 { font-size: clamp(3rem, 17vw, 5rem); }
+      h1 { font-size: clamp(2.3rem, 11vw, 3.8rem); }
       .name-ar { font-size: clamp(2rem, 11vw, 3.3rem); }
-      .hero-main, .arabic-panel, .project-card { border-radius: 24px; }
+      .hero-main, .highlights-panel, .project-card { border-radius: 24px; }
       .social-grid { grid-template-columns: 1fr; }
       .footer { flex-direction: column; }
     }
@@ -643,44 +718,45 @@
         <span>benjelloun.dev</span>
       </a>
       <nav class="quick-links" aria-label="Social profiles">
+        <a href="#projects">Projects</a>
         <a href="https://github.com/kmbenjel" rel="me noopener noreferrer" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/kmbenjel" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
-        <a href="#certificates">Certificates / الشهادات</a>
+        <a href="#certificates">Certificates</a>
         <a href="https://x.com/kmbenjel" rel="me noopener noreferrer" target="_blank">X</a>
-        <a href="https://www.instagram.com/kmbenjel" rel="me noopener noreferrer" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/kmbenjel" rel="me noopener noreferrer" target="_blank">Facebook</a>
       </nav>
     </header>
 
     <section class="hero" aria-labelledby="page-title">
       <div class="panel hero-main">
         <div>
-          <span class="eyebrow">developer · digital publishing · Arabic interfaces</span>
-          <h1 id="page-title">Khalid Benjelloun <span class="name-ar" lang="ar" dir="rtl">خالد بنجلّون</span></h1>
+          <span class="eyebrow">AI-native systems · autonomous workflows · fullstack &amp; C · digital preservation</span>
+          <h1 id="page-title">Khalid Benjelloun</h1>
         </div>
         <div>
-          <p class="lead">I build useful web experiences with an eye for language, clarity, performance, and publishing: from bilingual interfaces to Arabic text editions and print-friendly readers.</p>
+          <p class="lead">I build production web platforms, high-volume data pipelines, and autonomous agent infrastructure with deep computer science fundamentals (1337 / 42 Network C &amp; Unix, Le Wagon Rails/PostgreSQL) and AI-native developer velocity.</p>
           <ul class="focus-list">
-            <li>Frontend engineering</li>
-            <li>Arabic typography</li>
-            <li>Digital publishing</li>
-            <li>Practical tools</li>
+            <li>AI-Native Systems &amp; Agent Bridges</li>
+            <li>Autonomous Data &amp; CV Pipelines</li>
+            <li>Arabic Typography &amp; Digital Preservation</li>
+            <li>C, Unix &amp; Fullstack Engineering</li>
           </ul>
           <div class="hero-actions">
-            <a class="action-button" href="#certificates">Certificates / الشهادات</a>
-            <a class="action-button secondary" href="https://www.linkedin.com/in/kmbenjel" rel="me noopener noreferrer" target="_blank">LinkedIn profile</a>
+            <a class="action-button" href="#projects">Featured Projects</a>
+            <a class="action-button secondary" href="#certificates">Certificates</a>
+            <a class="action-button secondary" href="https://github.com/kmbenjel" rel="me noopener noreferrer" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
 
-      <aside class="panel arabic-panel" aria-label="Arabic introduction" lang="ar" dir="rtl">
+      <aside class="panel highlights-panel" aria-label="Key highlights">
         <div>
-          <h2>مطوّر ويب يهتمّ باللغة والوضوح والتفاصيل.</h2>
+          <h2>Autonomous Systems, Agent Workflows &amp; Digital Preservation.</h2>
         </div>
-        <p>أصنع واجهات ومواقع خفيفة وسريعة، وأعتني بالنص العربي وبالتجارب ثنائية اللغة وبالنشر الرقمي الذي يحترم القارئ والمحتوى.</p>
+        <p>Bridging low-level systems discipline from 1337 / 42 Network (C &amp; Unix) with autonomous agent engineering in Google Antigravity and Claude Code. Delivering high-throughput pipelines, production web platforms, and digital heritage archives.</p>
         <div class="availability">
-          <span>Portfolio, certificates, and selected work</span>
-          <span>روابط مباشرة للأعمال والحسابات المهنية</span>
+          <span>16,700+ Historical Volumes Cataloged (174+ GB)</span>
+          <span>Workstation Discord Bridge · Mobile Agent Steering</span>
+          <span>100/100 PageSpeed · Open-Source Code on GitHub</span>
         </div>
       </aside>
     </section>
@@ -697,27 +773,124 @@
         <a class="social-card" href="https://github.com/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>GitHub</strong><span>@kmbenjel</span></a>
         <a class="social-card" href="https://www.linkedin.com/in/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>LinkedIn</strong><span>/in/kmbenjel</span></a>
         <a class="social-card" href="https://x.com/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>X</strong><span>@kmbenjel</span></a>
-        <a class="social-card" href="https://www.instagram.com/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>Instagram</strong><span>@kmbenjel</span></a>
-        <a class="social-card" href="https://www.facebook.com/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>Facebook</strong><span>/kmbenjel</span></a>
       </nav>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <div>
+          <p class="section-label">Featured Systems &amp; Production Platforms</p>
+          <h2 id="projects-title">Featured Projects</h2>
+        </div>
+        <p>Production web applications, autonomous developer infrastructure, computer-vision pipelines, and classical digital editions with active userbases.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Manuscript Platform · AI Media Pipeline</span><span>masahif-al-maghrib.com</span></div>
+            <h3>
+              <a href="https://masahif-al-maghrib.com/" target="_blank" rel="noopener noreferrer">Masahif al-Maghrib: Chronological Qur'anic Manuscripts Platform</a>
+            </h3>
+            <p>Interactive digital preservation platform and visual catalog for historical Moroccan Qur'anic manuscripts across 7 dynasties. Directed and produced bilingual promo video releases with Claude Code.</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://masahif-al-maghrib.com/" target="_blank" rel="noopener noreferrer">Visit Platform ↗</a>
+            <a class="project-btn secondary" href="https://github.com/kmbenjel/masahif-al-maghrib" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Virtual Academy · React &amp; Tailwind</span><span>hassanicalligraphy.com</span></div>
+            <h3>
+              <a href="https://hassanicalligraphy.com/" target="_blank" rel="noopener noreferrer">Ibrahim Calligraphy: Academy &amp; Script Showcase</a>
+            </h3>
+            <p>Interactive digital cultural showcase, high-resolution artwork gallery, and distance-learning cohort portal for Moroccan Arabic Calligraphy with master calligrapher Ibrahim Hassani Idrissi.</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://hassanicalligraphy.com/" target="_blank" rel="noopener noreferrer">Visit Platform ↗</a>
+            <a class="project-btn secondary" href="https://github.com/kmbenjel/ibrahimcalligraphy" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Agent Bridge · Google Antigravity &amp; Python</span><span>github.com/kmbenjel</span></div>
+            <h3>
+              <a href="https://github.com/kmbenjel/workstation-discord-bridge" target="_blank" rel="noopener noreferrer">Workstation Discord Bridge: Two-Way Mobile Agent Steering</a>
+            </h3>
+            <p>Bidirectional operations bridge connecting a Linux developer workstation to Discord for complete mobile supervision: run Antigravity and Claude Desktop sessions, activate remote control on Claude to continue coding on mobile, manage background processes, and stream live hardware telemetry — all directly via Discord messages.</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://github.com/kmbenjel/workstation-discord-bridge" target="_blank" rel="noopener noreferrer">Code &amp; Architecture (Mermaid) ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Computer Vision &amp; Big Data · 16,700+ Volumes</span><span>benjelloun.dev/library</span></div>
+            <h3>
+              <a href="https://benjelloun.dev/library" target="_blank" rel="noopener noreferrer">Phone-Library: Autonomous Digital Heritage Pipeline</a>
+            </h3>
+            <p>Large-scale offline Arabic digital library (16,700+ volumes, <bdi dir="ltr">174+ GB</bdi> across 6,100+ titles) on Android storage over FTP: automated computer-vision page cropping, multi-corpus reconciliation (Shamela, Waqfeya, Archive.org), and web publishing.</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://benjelloun.dev/library" target="_blank" rel="noopener noreferrer">Live Catalog ↗</a>
+            <a class="project-btn secondary" href="https://github.com/kmbenjel/phone-library" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Fullstack Rails 8 · PostgreSQL &amp; Kamal</span><span>github.com/kmbenjel</span></div>
+            <h3>
+              <a href="https://github.com/kmbenjel/loopline" target="_blank" rel="noopener noreferrer">Loopline: Feedback Boards &amp; Public Roadmaps Platform</a>
+            </h3>
+            <p>Production-shaped Rails 8.1 web application: server-rendered with Hotwire &amp; Turbo Streams for live upvoting, Solid Queue/Cable/Cache on PostgreSQL, zero-downtime Kamal 2 container deploys, and automated CI security analysis (Brakeman, RuboCop).</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://github.com/kmbenjel/loopline" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Poetry Reader · 100/100 PageSpeed</span><span>hmittou.benjelloun.dev</span></div>
+            <h3>
+              <a href="https://hmittou.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Hmittou: Arabic Rajaz Reader &amp; PDF Edition</a>
+            </h3>
+            <p>Interactive digital edition and vector print-ready PDF engine for Dr. Abd al-Hadi Hmittou's rajaz poem. Scored 100/100 on Google PageSpeed Insights.</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://hmittou.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Open Reader ↗</a>
+            <a class="project-btn secondary" href="https://github.com/kmbenjel/hmittou" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-meta"><span>Arabic Text Edition</span><span>nwd.benjelloun.dev</span></div>
+            <h3>
+              <a href="https://nwd.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Taqriz of Hilyat al-Nawadi: Classical Literary Presentation</a>
+            </h3>
+            <p>An Arabic text presentation of al-Taqi al-Shaykh's classical literary taqriz for the poem Hilyat al-Nawadi.</p>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn primary" href="https://nwd.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Open Text ↗</a>
+            <a class="project-btn secondary" href="https://github.com/kmbenjel/nwd" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="certificates" aria-labelledby="certificates-title">
       <div class="section-head">
         <div>
           <p class="section-label">Credentials</p>
-          <h2 id="certificates-title">Certificates / الشهادات</h2>
+          <h2 id="certificates-title">Licenses &amp; Certifications</h2>
         </div>
-        <p>23 professional certifications and credentials, listed in English.</p>
-      </div>
-
-      <div class="certificate-panel">
-        <div>
-          <h3>Licenses &amp; Certifications</h3>
-          <p>A complete English list, with credential links where available.</p>
-          <p class="certificate-note">For the live profile view, use the LinkedIn certificates button.</p>
-        </div>
-        <a class="action-button" href="https://www.linkedin.com/in/kmbenjel/details/certifications/" rel="me noopener noreferrer" target="_blank">LinkedIn certificates / الشهادات</a>
+        <p>23 verified credentials spanning fullstack development, systems, databases, and software engineering.</p>
       </div>
 
       <div class="certificate-list">
@@ -902,62 +1075,20 @@
             <a class="credential-link" href="https://mylearn.oracle.com/api/badges/metadata/ou/learning-path/oracle-java-foundations-training-and-assessment/152239" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
       </div>
-    </section>
 
-    <section aria-labelledby="projects-title">
-      <div class="section-head">
+      <div class="certificate-panel">
         <div>
-          <p class="section-label">Selected work</p>
-          <h2 id="projects-title">Projects / مشاريع</h2>
+          <h3>Verified Credentials on LinkedIn</h3>
+          <p>A complete credential directory with issuing organization records.</p>
+          <p class="certificate-note">For the live profile view and badge verification, visit LinkedIn certifications.</p>
         </div>
-        <p>A small selection of published work around Arabic text, typography, and focused static websites.</p>
-      </div>
-
-      <div class="projects">
-        <a class="project-card" href="https://hmittou.benjelloun.dev/">
-          <div>
-            <div class="project-meta"><span>Poetry reader</span><span>hmittou.benjelloun.dev</span></div>
-            <h3>
-              <span class="ar-title" lang="ar" dir="rtl">حمار الشعراء</span>
-              <span class="en-title">Arabic Rajaz Reader and PDF Edition</span>
-            </h3>
-            <p>A responsive reader and print-ready edition for a rajaz poem by Dr. Abd al-Hadi Hmittou.</p>
-            <p class="ar-desc" lang="ar" dir="rtl">قراءة رقمية مضبوطة لرجز د. عبد الهادي حميتو، مع عناية بالعرض ونسخ PDF للطباعة.</p>
-          </div>
-          <span class="open-link">Open project / فتح المشروع</span>
-        </a>
-
-        <a class="project-card" href="https://nwd.benjelloun.dev/">
-          <div>
-            <div class="project-meta"><span>Arabic text edition</span><span>nwd.benjelloun.dev</span></div>
-            <h3>
-              <span class="ar-title" lang="ar" dir="rtl">تقريظ حلية النوادي</span>
-              <span class="en-title">Taqriz of Hilyat al-Nawadi</span>
-            </h3>
-            <p>An Arabic text presentation of al-Taqi al-Shaykh's taqriz for the poem Hilyat al-Nawadi.</p>
-            <p class="ar-desc" lang="ar" dir="rtl">تقريظ التقي الشيخ لمنظومة حلية النوادي، في صفحة عربية هادئة ومباشرة.</p>
-          </div>
-          <span class="open-link">Open project / فتح المشروع</span>
-        </a>
-
-        <a class="project-card" href="/abufhr/">
-          <div>
-            <div class="project-meta"><span>Literary tribute</span><span>/abufhr/</span></div>
-            <h3>
-              <span class="ar-title" lang="ar" dir="rtl">أبو فهر محمود شاكر</span>
-              <span class="en-title">Tribute to Mahmoud Muhammad Shaker</span>
-            </h3>
-            <p>A concise tribute page for Abu Fehr and his place in Arabic literature and heritage.</p>
-            <p class="ar-desc" lang="ar" dir="rtl">صفحة تعريفية موجزة بأبي فهر محمود محمد شاكر ومكانته في الأدب والتراث العربي.</p>
-          </div>
-          <span class="open-link">Open tribute / فتح الصفحة</span>
-        </a>
+        <a class="action-button" href="https://www.linkedin.com/in/kmbenjel/details/certifications/" rel="me noopener noreferrer" target="_blank">LinkedIn Certifications ↗</a>
       </div>
     </section>
 
     <footer class="footer">
-      <span>© 2026 Khalid Benjelloun</span>
-      <span lang="ar" dir="rtl">ملف شخصي وروابط مهنية ومشاريع مختارة.</span>
+      <span>© 2026 Khalid Benjelloun · Built with <a href="https://github.com/google" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Google Antigravity</a></span>
+      <span>Personal portfolio, engineering credentials, and open-source AI systems.</span>
     </footer>
   </main>
 </body>
