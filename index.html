@@ -535,6 +535,50 @@
 
     .credential-link.muted::after { content: ""; }
 
+    .more-certificates {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 251, 244, 0.48);
+      padding: 16px 20px;
+    }
+
+    .more-certificates summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--accent-ink);
+      font-size: 1rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      user-select: none;
+    }
+
+    .more-certificates summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .more-certificates summary::after {
+      content: "+ Expand (18 more)";
+      font-size: 0.86rem;
+      color: var(--teal);
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+    }
+
+    .more-certificates[open] summary {
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .more-certificates[open] summary::after {
+      content: "− Collapse";
+    }
+
     .project-card {
       min-height: 360px;
       display: flex;
@@ -722,7 +766,7 @@
         <a href="https://github.com/kmbenjel" rel="me noopener noreferrer" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/kmbenjel" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
         <a href="#certificates">Certificates</a>
-        <a href="https://x.com/kmbenjel" rel="me noopener noreferrer" target="_blank">X</a>
+        <a href="mailto:khalidmailing@gmail.com">Contact</a>
       </nav>
     </header>
 
@@ -733,7 +777,7 @@
           <h1 id="page-title">Khalid Benjelloun</h1>
         </div>
         <div>
-          <p class="lead">I build production web platforms, high-volume data pipelines, and autonomous agent infrastructure with deep computer science fundamentals (1337 / 42 Network C &amp; Unix, Le Wagon Rails/PostgreSQL) and AI-native developer velocity.</p>
+          <p class="lead">I build production web platforms, high-volume data pipelines, and autonomous agent infrastructure with deep computer science fundamentals (1337 / 42 Network C &amp; Unix, Ruby on Rails &amp; PostgreSQL) and AI-native developer velocity.</p>
           <ul class="focus-list">
             <li>AI-Native Systems &amp; Agent Bridges</li>
             <li>Autonomous Data &amp; CV Pipelines</li>
@@ -742,8 +786,9 @@
           </ul>
           <div class="hero-actions">
             <a class="action-button" href="#projects">Featured Projects</a>
-            <a class="action-button secondary" href="#certificates">Certificates</a>
+            <a class="action-button secondary" href="mailto:khalidmailing@gmail.com">Email Me ✉</a>
             <a class="action-button secondary" href="https://github.com/kmbenjel" rel="me noopener noreferrer" target="_blank">GitHub</a>
+            <a class="action-button secondary" href="#certificates">Credentials</a>
           </div>
         </div>
       </div>
@@ -772,6 +817,8 @@
       <nav class="social-grid" aria-label="Social profile links">
         <a class="social-card" href="https://github.com/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>GitHub</strong><span>@kmbenjel</span></a>
         <a class="social-card" href="https://www.linkedin.com/in/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>LinkedIn</strong><span>/in/kmbenjel</span></a>
+        <a class="social-card" href="mailto:khalidmailing@gmail.com"><strong>Direct Email</strong><span>khalidmailing@gmail.com</span></a>
+        <a class="social-card" href="https://www.codingame.com/certification/3vLFQ1_sEoCHxCSL2pSpnQ" rel="noopener noreferrer" target="_blank"><strong>CodinGame Legend</strong><span>Top 0.1% Global Speed</span></a>
         <a class="social-card" href="https://x.com/kmbenjel" rel="me noopener noreferrer" target="_blank"><strong>X</strong><span>@kmbenjel</span></a>
       </nav>
     </section>
@@ -802,15 +849,15 @@
 
         <article class="project-card">
           <div>
-            <div class="project-meta"><span>Virtual Academy · React &amp; Tailwind</span><span>hassanicalligraphy.com</span></div>
+            <div class="project-meta"><span>Virtual Academy · React, Tailwind &amp; Replit SSH</span><span>hassanicalligraphy.com</span></div>
             <h3>
-              <a href="https://hassanicalligraphy.com/" target="_blank" rel="noopener noreferrer">Ibrahim Calligraphy: Academy &amp; Script Showcase</a>
+              <a href="https://hassanicalligraphy.com/" target="_blank" rel="noopener noreferrer">Hassani Calligraphy: Virtual Academy &amp; Script Showcase</a>
             </h3>
-            <p>Interactive digital cultural showcase, high-resolution artwork gallery, and distance-learning cohort portal for Moroccan Arabic Calligraphy with master calligrapher Ibrahim Hassani Idrissi.</p>
+            <p>Interactive trilingual (AR/EN/FR) cultural platform, high-resolution artwork gallery, and distance-learning cohort portal for Moroccan Arabic Calligraphy with master calligrapher Ibrahim Hassani Idrissi.</p>
           </div>
           <div class="project-actions">
             <a class="project-btn primary" href="https://hassanicalligraphy.com/" target="_blank" rel="noopener noreferrer">Visit Platform ↗</a>
-            <a class="project-btn secondary" href="https://github.com/kmbenjel/ibrahimcalligraphy" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+            <a class="project-btn secondary" href="https://github.com/kmbenjel/hassanicalligraphy.com" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
           </div>
         </article>
 
@@ -820,7 +867,7 @@
             <h3>
               <a href="https://github.com/kmbenjel/workstation-discord-bridge" target="_blank" rel="noopener noreferrer">Workstation Discord Bridge: Two-Way Mobile Agent Steering</a>
             </h3>
-            <p>Bidirectional operations bridge connecting a Linux developer workstation to Discord for complete mobile supervision: run Antigravity and Claude Desktop sessions, activate remote control on Claude to continue coding on mobile, manage background processes, and stream live hardware telemetry — all directly via Discord messages.</p>
+            <p>Bidirectional operations bridge connecting a Linux developer workstation to Discord for complete mobile supervision: run Antigravity and Claude Code sessions, steer remote SSH containers, manage background processes, and stream live hardware telemetry directly via Discord.</p>
           </div>
           <div class="project-actions">
             <a class="project-btn primary" href="https://github.com/kmbenjel/workstation-discord-bridge" target="_blank" rel="noopener noreferrer">Code &amp; Architecture (Mermaid) ↗</a>
@@ -843,14 +890,15 @@
 
         <article class="project-card">
           <div>
-            <div class="project-meta"><span>Fullstack Rails 8 · PostgreSQL &amp; Kamal</span><span>github.com/kmbenjel</span></div>
+            <div class="project-meta"><span>Static Site Generator &amp; CLI · 100/100 PageSpeed</span><span>github.com/kmbenjel/shatr</span></div>
             <h3>
-              <a href="https://github.com/kmbenjel/loopline" target="_blank" rel="noopener noreferrer">Loopline: Feedback Boards &amp; Public Roadmaps Platform</a>
+              <a href="https://github.com/kmbenjel/shatr" target="_blank" rel="noopener noreferrer">shatr &amp; create-qasida: Arabic Poetry Publishing Engine</a>
             </h3>
-            <p>Production-shaped Rails 8.1 web application: server-rendered with Hotwire &amp; Turbo Streams for live upvoting, Solid Queue/Cable/Cache on PostgreSQL, zero-downtime Kamal 2 container deploys, and automated CI security analysis (Brakeman, RuboCop).</p>
+            <p>Zero-dependency static site generator and CLI scaffolder (<code>npm create qasida</code>) that compiles plain-text vocalized Arabic poems into 100/100-Lighthouse web apps with on-canvas <em>kashida</em> justification, offline PWA support, visual studio, and print-ready PDF booklets.</p>
           </div>
           <div class="project-actions">
-            <a class="project-btn primary" href="https://github.com/kmbenjel/loopline" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+            <a class="project-btn primary" href="https://github.com/kmbenjel/shatr" target="_blank" rel="noopener noreferrer">Engine &amp; CLI Spec ↗</a>
+            <a class="project-btn secondary" href="https://kmbenjel.github.io/alfiya" target="_blank" rel="noopener noreferrer">Alfiyya Demo (1,002 Verses) ↗</a>
           </div>
         </article>
 
@@ -858,27 +906,13 @@
           <div>
             <div class="project-meta"><span>Poetry Reader · 100/100 PageSpeed</span><span>hmittou.benjelloun.dev</span></div>
             <h3>
-              <a href="https://hmittou.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Hmittou: Arabic Rajaz Reader &amp; PDF Edition</a>
+              <a href="https://hmittou.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Hmittou: Arabic Qasida Reader &amp; PDF Edition</a>
             </h3>
-            <p>Interactive digital edition and vector print-ready PDF engine for Dr. Abd al-Hadi Hmittou's rajaz poem. Scored 100/100 on Google PageSpeed Insights.</p>
+            <p>Interactive digital edition, offline PWA, and vector print-ready PDF booklet for Dr. Abd al-Hadi Hmittou's 291-verse classical poem, powered by the <code>shatr</code> engine. Scored 100/100 across all Google PageSpeed categories.</p>
           </div>
           <div class="project-actions">
             <a class="project-btn primary" href="https://hmittou.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Open Reader ↗</a>
             <a class="project-btn secondary" href="https://github.com/kmbenjel/hmittou" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div>
-            <div class="project-meta"><span>Arabic Text Edition</span><span>nwd.benjelloun.dev</span></div>
-            <h3>
-              <a href="https://nwd.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Taqriz of Hilyat al-Nawadi: Classical Literary Presentation</a>
-            </h3>
-            <p>An Arabic text presentation of al-Taqi al-Shaykh's classical literary taqriz for the poem Hilyat al-Nawadi.</p>
-          </div>
-          <div class="project-actions">
-            <a class="project-btn primary" href="https://nwd.benjelloun.dev/" target="_blank" rel="noopener noreferrer">Open Text ↗</a>
-            <a class="project-btn secondary" href="https://github.com/kmbenjel/nwd" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
           </div>
         </article>
       </div>
@@ -890,10 +924,40 @@
           <p class="section-label">Credentials</p>
           <h2 id="certificates-title">Licenses &amp; Certifications</h2>
         </div>
-        <p>23 verified credentials spanning fullstack development, systems, databases, and software engineering.</p>
+        <p>Top 6 engineering credentials highlighted below, with all 24 verified certifications expandable underneath.</p>
       </div>
 
       <div class="certificate-list">
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">CodinGame · Issued Jan 2024</p>
+              <h3>Coding Speed: Legend Level (Top 0.1% Globally)</h3>
+              <p class="certificate-id">Credential ID: 10144950</p>
+            </div>
+            <a class="credential-link" href="https://www.codingame.com/certification/3vLFQ1_sEoCHxCSL2pSpnQ" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Oracle · Issued Aug 2025</p>
+              <h3>Oracle Java Foundations</h3>
+            </div>
+            <a class="credential-link" href="https://mylearn.oracle.com/api/badges/metadata/ou/learning-path/oracle-java-foundations-training-and-assessment/152239" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">CodeSignal Learn · Issued May 2026</p>
+              <h3>SOLID Foundations for Software Design</h3>
+            </div>
+            <span class="credential-link muted">Verified via CodeSignal Learn</span>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">CodinGame · Issued Dec 2023</p>
+              <h3>Ruby Certification with Honors</h3>
+              <p class="certificate-id">Credential ID: 10049204</p>
+            </div>
+            <a class="credential-link" href="https://www.codingame.com/certification/hR6v18hfToCpwItlWZxYUw" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
           <article class="certificate-card">
             <div>
               <p class="certificate-meta">Udacity · Issued May 2020</p>
@@ -904,11 +968,23 @@
           </article>
           <article class="certificate-card">
             <div>
-              <p class="certificate-meta">Programming Hub · Issued May 2020</p>
-              <h3>Ruby Certification Course</h3>
-              <p class="certificate-id">Credential ID: 1590244144369</p>
+              <p class="certificate-meta">ACM, Association for Computing Machinery · Issued Apr 2022</p>
+              <h3>ACM Membership</h3>
             </div>
-            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682406862700.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+            <span class="credential-link muted">Listed on LinkedIn</span>
+          </article>
+      </div>
+
+      <details class="more-certificates">
+        <summary>Show all 24 verified certificates (Foundational C, Ruby on Rails, Linux, Git &amp; Testing courses)</summary>
+        <div class="certificate-list">
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Codecademy · Issued Jan 2021</p>
+              <h3>Learn Ruby on Rails Course</h3>
+              <p class="certificate-id">Credential ID: 600E49DEF1</p>
+            </div>
+            <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/13df149ad4f7cadbb4c65603fb695cf8" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
           <article class="certificate-card">
             <div>
@@ -920,51 +996,11 @@
           </article>
           <article class="certificate-card">
             <div>
-              <p class="certificate-meta">Codecademy · Issued Apr 2019</p>
-              <h3>Learn Ruby Course</h3>
-              <p class="certificate-id">Credential ID: 5DCB2601B6</p>
-            </div>
-            <a class="credential-link" href="https://www.codecademy.com/profiles/khalid_prog/certificates/1c05e0382bc5681c824c4cbe85c126fd" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">Codecademy · Issued Jan 2021</p>
-              <h3>Learn Ruby on Rails Course</h3>
-              <p class="certificate-id">Credential ID: 600E49DEF1</p>
-            </div>
-            <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/13df149ad4f7cadbb4c65603fb695cf8" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
               <p class="certificate-meta">Codecademy · Issued Sep 2021</p>
               <h3>Learn Git and GitHub Course</h3>
               <p class="certificate-id">Credential ID: 613421E540</p>
             </div>
             <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/a8ab218d5950c29861635cc0bf12fd13" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">CodinGame · Issued Dec 2023</p>
-              <h3>Ruby Certification with honors</h3>
-              <p class="certificate-id">Credential ID: 10049204</p>
-            </div>
-            <a class="credential-link" href="https://www.codingame.com/certification/hR6v18hfToCpwItlWZxYUw" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">Codecademy · Issued May 2023</p>
-              <h3>Learn HTML Course</h3>
-              <p class="certificate-id">Credential ID: 6452005326</p>
-            </div>
-            <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">Programming Hub · Issued Apr 2023</p>
-              <h3>Selenium Automated Testing Certification Course</h3>
-              <p class="certificate-id">Credential ID: 682620006026</p>
-            </div>
-            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682620006026.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
           <article class="certificate-card">
             <div>
@@ -976,11 +1012,26 @@
           </article>
           <article class="certificate-card">
             <div>
-              <p class="certificate-meta">Programming Hub · Issued Apr 2023</p>
-              <h3>Java Certification Course</h3>
-              <p class="certificate-id">Credential ID: 1682666973190</p>
+              <p class="certificate-meta">Codecademy · Issued May 2025</p>
+              <h3>Effective Team Communication Course</h3>
             </div>
-            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682666973190.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+            <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/a822776856a348e6a80e224aa9264ad5" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Codecademy · Issued Apr 2019</p>
+              <h3>Learn Ruby Course</h3>
+              <p class="certificate-id">Credential ID: 5DCB2601B6</p>
+            </div>
+            <a class="credential-link" href="https://www.codecademy.com/profiles/khalid_prog/certificates/1c05e0382bc5681c824c4cbe85c126fd" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Codecademy · Issued May 2023</p>
+              <h3>Learn HTML Course</h3>
+              <p class="certificate-id">Credential ID: 6452005326</p>
+            </div>
+            <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
           <article class="certificate-card">
             <div>
@@ -1001,10 +1052,26 @@
           <article class="certificate-card">
             <div>
               <p class="certificate-meta">Programming Hub · Issued Apr 2023</p>
-              <h3>HTML Certification Course</h3>
-              <p class="certificate-id">Credential ID: 1682562623804</p>
+              <h3>Java Certification Course</h3>
+              <p class="certificate-id">Credential ID: 1682666973190</p>
             </div>
-            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682621823287.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682666973190.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Programming Hub · Issued May 2023</p>
+              <h3>Python Certification Course</h3>
+              <p class="certificate-id">Credential ID: 1683524017141</p>
+            </div>
+            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1683524017141.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Programming Hub · Issued May 2020</p>
+              <h3>Ruby Certification Course</h3>
+              <p class="certificate-id">Credential ID: 1590244144369</p>
+            </div>
+            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682406862700.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
           <article class="certificate-card">
             <div>
@@ -1017,6 +1084,14 @@
           <article class="certificate-card">
             <div>
               <p class="certificate-meta">Programming Hub · Issued Apr 2023</p>
+              <h3>Selenium Automated Testing Certification Course</h3>
+              <p class="certificate-id">Credential ID: 682620006026</p>
+            </div>
+            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682620006026.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+          </article>
+          <article class="certificate-card">
+            <div>
+              <p class="certificate-meta">Programming Hub · Issued Apr 2023</p>
               <h3>Fundamentals Certification Course</h3>
               <p class="certificate-id">Credential ID: 1682661051923</p>
             </div>
@@ -1024,10 +1099,11 @@
           </article>
           <article class="certificate-card">
             <div>
-              <p class="certificate-meta">LinkedIn · Issued Oct 2020</p>
-              <h3>HTML Essential Training</h3>
+              <p class="certificate-meta">Programming Hub · Issued Apr 2023</p>
+              <h3>HTML Certification Course</h3>
+              <p class="certificate-id">Credential ID: 1682562623804</p>
             </div>
-            <a class="credential-link" href="https://www.linkedin.com/learning/certificates/0edcef742a4526d3e73e930ff23ecc7e54d11e847f38f1d779ec10e76d8a88a0" rel="noopener noreferrer" target="_blank">View credential</a>
+            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1682621823287.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
           <article class="certificate-card">
             <div>
@@ -1039,42 +1115,13 @@
           </article>
           <article class="certificate-card">
             <div>
-              <p class="certificate-meta">Programming Hub · Issued May 2023</p>
-              <h3>Python Certification Course</h3>
-              <p class="certificate-id">Credential ID: 1683524017141</p>
+              <p class="certificate-meta">LinkedIn · Issued Oct 2020</p>
+              <h3>HTML Essential Training</h3>
             </div>
-            <a class="credential-link" href="https://storage.googleapis.com/programminghub/certificate%2F1683524017141.pdf" rel="noopener noreferrer" target="_blank">View credential</a>
+            <a class="credential-link" href="https://www.linkedin.com/learning/certificates/0edcef742a4526d3e73e930ff23ecc7e54d11e847f38f1d779ec10e76d8a88a0" rel="noopener noreferrer" target="_blank">View credential</a>
           </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">CodinGame · Issued Jan 2024</p>
-              <h3>Coding speed: Legend level</h3>
-              <p class="certificate-id">Credential ID: 10144950</p>
-            </div>
-            <a class="credential-link" href="https://www.codingame.com/certification/3vLFQ1_sEoCHxCSL2pSpnQ" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">ACM, Association for Computing Machinery · Issued Apr 2022</p>
-              <h3>ACM membership</h3>
-            </div>
-            <span class="credential-link muted">Listed on LinkedIn</span>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">Codecademy · Issued May 2025</p>
-              <h3>Effective Team Communication Course</h3>
-            </div>
-            <a class="credential-link" href="https://www.codecademy.com/profiles/kmbenjel/certificates/a822776856a348e6a80e224aa9264ad5" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-          <article class="certificate-card">
-            <div>
-              <p class="certificate-meta">Oracle · Issued Aug 2025</p>
-              <h3>Oracle Java Foundations</h3>
-            </div>
-            <a class="credential-link" href="https://mylearn.oracle.com/api/badges/metadata/ou/learning-path/oracle-java-foundations-training-and-assessment/152239" rel="noopener noreferrer" target="_blank">View credential</a>
-          </article>
-      </div>
+        </div>
+      </details>
 
       <div class="certificate-panel">
         <div>
@@ -1087,7 +1134,7 @@
     </section>
 
     <footer class="footer">
-      <span>© 2026 Khalid Benjelloun · Built with <a href="https://github.com/google" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Google Antigravity</a></span>
+      <span>© 2026 Khalid Benjelloun · <a href="mailto:khalidmailing@gmail.com" style="color: inherit; text-decoration: underline;">khalidmailing@gmail.com</a> · Built with <a href="https://github.com/google" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Google Antigravity</a></span>
       <span>Personal portfolio, engineering credentials, and open-source AI systems.</span>
     </footer>
   </main>
